@@ -29,7 +29,6 @@ main {
     color: #B8E0ED;
     font-size: 1em;
     border-bottom-style: double;
-    background-color: green;
     padding: 25px;
 }
 
@@ -83,6 +82,12 @@ main {
     padding-bottom: 0rem;
 }
 
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+
 /* INDEX - HEADER - BARRA DE NAVEGACIÓN */
 
 li {
@@ -124,7 +129,6 @@ li {
     margin-left: 0.625em;
     margin-bottom: 8.438em;
     height: 45em;
-    background-color: purple;
 }
 
 .descripcion_foto {
@@ -133,7 +137,6 @@ li {
     font-size: 1.875em;
     align-items: center;
     margin-right: 0.625em;
-    background-color: forestgreen;
 }
 
 .todos_icrc {
@@ -150,27 +153,22 @@ li {
     grid-template-areas: "titulo      titulo       titulo" "losMejores losMejores  descripcion" "nosotros-p nosotros-p nosotros-p" "nosotros-p nosotros-p nosotros-p";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 4.5fr 1fr 1fr;
-    background-color: salmon;
 }
 
 .grilla-principal-titulo {
     grid-area: titulo;
-    background-color: palegoldenrod;
 }
 
 .grilla-principal-descripcion {
     grid-area: descripcion;
-    background-color: darkblue
 }
 
 .grilla-principal-nosotros {
     grid-area: nosotros-p;
-    background-color: maroon
 }
 
 .grilla-foto-todos {
     grid-area: losMejores;
-    background-color: aqua;
 }
 
 .icono-nosotros {
@@ -232,7 +230,6 @@ li {
     grid-template-areas: "nosotros-s publicaciones eventos" "becas participa  sumate";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3.5fr 3.5fr;
-    background-color: chartreuse;
 }
 
 .grilla-secundaria-nosotros {
@@ -660,9 +657,9 @@ li {
     }
 
     .titulo-grilla {
-    font-size: 15px;
-    border-bottom: solid grey;
-    border-top: solid grey;
+        font-size: 15px;
+        border-bottom: solid grey;
+        border-top: solid grey;
     }
 
     .boton {
