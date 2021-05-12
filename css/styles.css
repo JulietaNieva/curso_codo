@@ -82,16 +82,10 @@ main {
     padding-bottom: 0rem;
 }
 
-.navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
+.navbar-collapse {
     justify-content: flex-end;
 }
 
-.g-3, .gy-3 {
-    --bs-gutter-y: 1rem;
-    text-align-last: center;
-}
 
 /* INDEX - HEADER - BARRA DE NAVEGACIÓN */
 
@@ -634,7 +628,6 @@ li {
     *{
         margin: 0;
         padding: 0;
-        border: red 1px dotted
     }
 
     .logoChico {
@@ -704,11 +697,9 @@ li {
         "nosotros-p nosotros-p";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 0.5fr;
-        background-color: green;
     }
 
     .contenedorH1{
-        background-color: red;
         font-size:1rem;
     }
     
@@ -719,7 +710,6 @@ li {
         "participa" "sumate";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        background-color: chartreuse;
         font-size: 13px;
     }
 
@@ -861,6 +851,70 @@ li {
     .texto-chico {
         font-size: 17px;
     }
+
+    /* PUBLICACIONES */
+
+    .publicaciones-fila-descripcion {
+        display: block;
+        grid-template-areas: "titulo descripcion";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        border-bottom: solid grey;
+    }
+    
+    /* EVENTOS */
+
+    .eventos-foto-icp {
+        display: inline-flex;
+        background-image: url(../media/img/ICP.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 14em;
+        width: 18em;
+        border: solid grey;
+        margin: 10px;
+        background-size: 87%;
+    }
+
+    .eventos-foto-cogsci {
+        display: inline-flex;
+        background-image: url(../media/img/eventos-foto-cogsci.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 14em;
+        width: 18em;
+        border: solid grey;
+        margin: 10px;
+        background-size: 87%;
+    }
+
+    /* BECAS */
+
+    .becas-fila-descripcion {
+        display: block;
+        border-bottom: solid grey;
+    }
+
+    .formulario-participa {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .importante-participa {
+        margin-top: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        font-size: 1em;
+        border: solid green;
+        background-color: whitesmoke;
+        color: green;
+        padding: 15px;
+    }
+
+    
 }
 
 
