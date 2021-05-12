@@ -568,7 +568,8 @@ li {
     margin-right: 250px;
     margin-left: 250px;
     margin-bottom: 60px;
-}
+    text-align-last: center;
+    }
 
 .boton-participa {
     margin-top: 60px;
