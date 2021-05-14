@@ -151,10 +151,8 @@ li {
 .todos_icrc {
     background-image: url(../media/img/icrc-todos-708x536.png);
     background-repeat: no-repeat;
-    /* min-width: 6.25em; */
-    /* min-height: 6.25em; */
-    /* background-size: 80%; */
     background-position: center;
+    margin-top: 22px;
 }
 
 .grilla-principal {
@@ -594,13 +592,9 @@ li {
     }
 
     .logoChico {
-        width: 94px;
-        height: 5.563em;
+        width: 74px;
+        height: 4.563em;
         background-image: url(../media/img/Logo_sfondo_gr.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: 0.313em;
-        margin-left: 0.625em;
     }
 
     body {
@@ -613,12 +607,18 @@ li {
         margin-top: 95px;
     }
 
+    .tituloH2 {
+        font-size: 18px;
+    }
+
     .logoGrande {
         background-image: url(../media/img/Logo_sfondo_ch.png);
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 8em;
-        width: 25.5em;
+        height: 9em;
+        width: 37.5em;
+        margin: 18px 52px -18px 52px;
+        box-shadow: 36px 43px 42px #000;
     }
 
     .logo_titulo {
@@ -631,14 +631,16 @@ li {
         display: flex;
         text-align: center;
         font-size: 2.5em;
-        width:100%;
-        height:6rem;
+        width: 25rem;
+        margin: 30px 0px 10px 0px;
+        border-bottom: inset;
+        border-top: inset;
     }
         
     .todos_icrc {
         background-image: url(../media/img/icrc-todos-708x536.png);
         background-repeat: no-repeat;
-        margin: 13px;
+        margin: 25px;
         width: 21.25em;
         height: 17.255em;
         background-size: 98%;
@@ -672,7 +674,7 @@ li {
     }
 
     .titulo-grilla {
-        font-size: 15px;
+        font-size: 23px;
     }
 
     .boton {
@@ -681,6 +683,16 @@ li {
         padding: 2px 3px;
         background-color: white;
         border: 2px solid black;
+    }
+
+    .icono {
+        min-height: 40px;
+        min-width: 40px;
+        font-size: 30px;
+        border: solid;
+        border-color: black;
+        background-color: #1E3773;
+        border-radius: 15px;
     }
 
     /* NOSOTROS */
@@ -697,10 +709,6 @@ li {
     .subtitulo {
         color: whitesmoke;
         border-bottom: solid grey;
-    }
-
-    .tituloH2 {
-        font-size: 15px;
     }
 
     .nosotros-grilla-directores {
@@ -864,13 +872,9 @@ li {
     }
 
     .logoChico {
-        width: 94px;
-        height: 5.563em;
+        width: 74px;
+        height: 4.563em;
         background-image: url(../media/img/Logo_sfondo_gr.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: 0.313em;
-        margin-left: 0.625em;
     }
 
     body {
@@ -890,10 +894,12 @@ li {
     .logoGrande {
         background-image: url(../media/img/Logo_sfondo_ch.png);
         background-size: 100%;
-        height: 38em;
-        width: 92em;
-        background-position: center;
-        margin-left: 7em;
+        height: 13em;
+        width: 22em;
+        margin-left: 40px;
+        margin-right: 34px;
+        margin-top: 130px;
+        box-shadow: 29px 34px 21px #000;
     }
 
     .logo_titulo {
@@ -907,7 +913,11 @@ li {
     .descripcion_foto {
         display: flex;
         text-align: center;
-        width: 100%;
+        font-size: 2.5em;
+        width: 28rem;
+        margin: 58px 0px 0px 0px;
+        border-bottom: inset;
+        border-top: inset;
     }
 
     .todos_icrc {
