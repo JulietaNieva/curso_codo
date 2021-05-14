@@ -30,6 +30,7 @@ main {
     font-size: 1em;
     border-bottom-style: double;
     padding: 25px;
+    margin-top: 90px;
 }
 
 .subtitulo {
@@ -80,6 +81,7 @@ main {
 .navbar {
     padding-top: 0rem;
     padding-bottom: 0rem;
+    border-bottom: #3a84f1 px solid;
 }
 
 .navbar-collapse {
@@ -97,9 +99,9 @@ li {
 }
 
 .logoChico {
-    width: 14.313em;
+    width: 94px;
     height: 5.563em;
-    background-image: url("../media/img/Logo_sfondo_ch.png");
+    background-image: url(../media/img/Logo_sfondo_gr.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0.313em;
@@ -115,19 +117,27 @@ li {
 /* INDEX - HEADER - INDEX */
 
 .logoGrande {
-    background-image: url("../media/img/Logo_sfondo_gr.png");
+    background-image: url(../media/img/Logo_sfondo_ch.png);
+    background-size: 80%;
+    height: 29em;
+    width: 94em;
     background-repeat: no-repeat;
-    width: 58em;
-    height: 40.625em;
+    background-position: center;
+    margin-left: 13em;
+    margin-right: 5em;
+    /* border-bottom: solid 3px whitesmoke; */
+    /* border-top: solid 3px whitesmoke; */
+    background-color: #ECF4FE;
+    outline-style: auto;
+    border: solid 3px #1E3773;
+    box-shadow: 69px 73px 39px #000;
 }
 
 .logo_titulo {
     display: flex;
     align-items: flex-end;
-    margin-right: 0.625em;
-    margin-left: 0.625em;
-    margin-bottom: 8.438em;
-    height: 45em;
+    margin-bottom: 9.438em;
+    margin-top: 18em;
 }
 
 .descripcion_foto {
@@ -139,19 +149,23 @@ li {
 }
 
 .todos_icrc {
-    background-image: url("../media/img/icrc-todos-708x536.png");
+    background-image: url(../media/img/icrc-todos-708x536.png);
     background-repeat: no-repeat;
-    min-width: 6.25em;
-    min-height: 6.25em;
-    background-size: 80%;
+    /* min-width: 6.25em; */
+    /* min-height: 6.25em; */
+    /* background-size: 80%; */
     background-position: center;
 }
 
 .grilla-principal {
     display: grid;
-    grid-template-areas: "titulo      titulo       titulo" "losMejores losMejores  descripcion" "nosotros-p nosotros-p nosotros-p" "nosotros-p nosotros-p nosotros-p";
+    grid-template-areas:
+        "titulo titulo titulo"
+        "losMejores losMejores descripcion"
+        "nosotros-p nosotros-p nosotros-p"
+        "nosotros-p nosotros-p nosotros-p";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 2.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1fr;
 }
 
 .grilla-principal-titulo {
@@ -580,11 +594,13 @@ li {
     }
 
     .logoChico {
-        width: 7.4em;
-        height: 3em;
-        background-image: url("../media/img/Logo_sfondo_ch.png");
+        width: 94px;
+        height: 5.563em;
+        background-image: url(../media/img/Logo_sfondo_gr.png);
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: 0.313em;
+        margin-left: 0.625em;
     }
 
     body {
@@ -597,25 +613,18 @@ li {
         margin-top: 95px;
     }
 
-    .tituloH2 {
-        font-size: 0.5em;
-    }
-
     .logoGrande {
-        background-image: url("../media/img/Logo_sfondo_gr.png");
-        background-repeat: no-repeat;
-        width: 41em;
-        height: 13em;
+        background-image: url(../media/img/Logo_sfondo_ch.png);
         background-size: 100%;
+        background-repeat: no-repeat;
+        height: 8em;
+        width: 25.5em;
     }
 
     .logo_titulo {
-        align-items: end;
-        margin-right: 0.625em;
-        margin-left: 0.625em;
-        margin-bottom: 2em;
-        height: 13em;
-        margin-top: 10px;
+        margin-bottom: 3em;
+        height: 10em;
+        margin-top: 95px;
     }
 
     .descripcion_foto {
@@ -630,10 +639,10 @@ li {
         background-image: url(../media/img/icrc-todos-708x536.png);
         background-repeat: no-repeat;
         margin: 13px;
-        width: 20.25em;
-        height: 16.255em;
+        width: 21.25em;
+        height: 17.255em;
         background-size: 98%;
-        background-position: center;
+        place-self: center;
     }
 
     .grilla-principal {
@@ -664,8 +673,6 @@ li {
 
     .titulo-grilla {
         font-size: 15px;
-        border-bottom: solid grey;
-        border-top: solid grey;
     }
 
     .boton {
@@ -693,7 +700,7 @@ li {
     }
 
     .tituloH2 {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .nosotros-grilla-directores {
@@ -724,77 +731,61 @@ li {
         font-size: 17px;
         text-align: center;
     }
-
-    .nosotros-foto-prueba {
-        background-image: url("../media/img/foto-prueba.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
-    }
     
     .nosotros-foto-alejandra {
         background-image: url("../media/img/foto-ale-250x246.7.png");
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
+        min-height: 250px;
+        min-width: 250px;
     }
     
     .nosotros-foto-consuelo {
         background-image: url("../media/img/foto-consue-250x246.7.png");
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
+        min-height: 250px;
+        min-width: 250px;
     }
     
     .nosotros-foto-mariel {
         background-image: url("../media/img/foto-mari-250x246.7.png");
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
+        min-height: 250px;
+        min-width: 250px;
     }
     
     .nosotros-foto-martina {
         background-image: url("../media/img/foto-martu-250x246.7.png");
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
+        min-height: 250px;
+        min-width: 250px;
     }
     
     .nosotros-foto-pablo {
         background-image: url("../media/img/foto-pabli-250x246.7.png");
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
+        min-height: 250px;
+        min-width: 250px;
     }
     
     .nosotros-foto-julietal {
         background-image: url("../media/img/foto-julil-250x246.7.png");
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
+        min-height: 250px;
+        min-width: 250px;
     }
     
     .nosotros-foto-paulina {
         background-image: url("../media/img/foto-pauli-250x246.7.png");
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 200px;
-        min-width: 200px;
-        background-size: 60%;
+        min-height: 250px;
+        min-width: 250px;
     }
 
     .texto-chico {
@@ -873,11 +864,13 @@ li {
     }
 
     .logoChico {
-        width: 7.4em;
-        height: 3em;
-        background-image: url("../media/img/Logo_sfondo_ch.png");
+        width: 94px;
+        height: 5.563em;
+        background-image: url(../media/img/Logo_sfondo_gr.png);
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: 0.313em;
+        margin-left: 0.625em;
     }
 
     body {
@@ -895,11 +888,12 @@ li {
     }
 
     .logoGrande {
-        background-image: url(../media/img/Logo_sfondo_gr.png);
-        background-repeat: no-repeat;
-        width: 48em;
-        height: 21em;
-        background-size: 102%;
+        background-image: url(../media/img/Logo_sfondo_ch.png);
+        background-size: 100%;
+        height: 38em;
+        width: 92em;
+        background-position: center;
+        margin-left: 7em;
     }
 
     .logo_titulo {
