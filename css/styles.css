@@ -16,9 +16,9 @@ main {
     padding-bottom: 10px;
 }
 
-
 .tituloH2 {
     font-size: 1.5em;
+    padding:10px;
 }
 
 .titulo-principal {
@@ -199,6 +199,11 @@ li {
     border-radius: 15px;
 } 
 
+.seccionItem{
+    flex-flow: row nowrap;
+    padding:10px;
+}
+
 .grilla-secundaria {
     display: grid;
     grid-template-areas: "nosotros-s publicaciones eventos" "becas participa sumate";
@@ -207,39 +212,27 @@ li {
 }
 
 .grilla-secundaria-nosotros {
-    grid-area: nosotros-s;
-    flex-flow: row nowrap;
-    padding: 40px;
+    grid-area: nosotros-s;    
 }
 
 .grilla-secundaria-publicaciones {
-    grid-area: publicaciones;
-    flex-flow: row nowrap;
-    padding: 40px;
+    grid-area: publicaciones;   
   }
 
 .grilla-secundaria-eventos {
-    grid-area: eventos;
-    flex-flow: row nowrap;
-    padding: 40px;
+    grid-area: eventos;    
  }
 
 .grilla-secundaria-becas {
-    grid-area: becas;
-    flex-flow: row nowrap;
-    padding: 40px;
+    grid-area: becas;  
 }
 
 .grilla-secundaria-participa {
-    grid-area: participa;
-    flex-flow: row nowrap;
-    padding: 40px;
+    grid-area: participa;   
 }
 
 .grilla-secundaria-sumate {
-    grid-area: sumate;
-    flex-flow: row nowrap;
-    padding: 40px;
+    grid-area: sumate;   
 }
 
 
@@ -585,588 +578,153 @@ li {
 }
 
 
-@media only screen and (min-width: 1571px) {
-
-}
-
-@media only screen and (min-width: 991px) and (max-width:1570px) {
-
-main {
-    background-image: linear-gradient(to right, #091E3A, #2D9EE0);
-    background-size: cover;
-    padding-bottom: 10px;
-}
-
-
-.tituloH2 {
-    font-size: 1.5em;
-}
-
-.titulo-principal {
-    color: #B8E0ED;
-    font-size: 1em;
-    border-bottom-style: double;
-    padding: 25px;
-    margin-top: 90px;
-}
-
-.subtitulo {
-    color: whitesmoke;
-    font-size: 1.4em;
-    border-bottom: solid grey;
-}
-
-.texto-mediano {
-    font-size: 1.3em;
-    margin: 10px;
-}
-
-.texto-chico {
-    font-size: 1.1em;
-    margin: 14px;
-}
-
-.margen {
-    margin: 10px;
-}
-
-.alineacion-i {
-    text-align: left
-}
-
-.alineacion-j {
-    text-align: justify;
-}
-
-.alineacion-c {
-    text-align: center
-}
-
-.cajas-centradas {
-    display: flex;
-    justify-content: center;
-}
-
-.boton{
-    font-size: 15px;
-    border-radius: 4px;
-    padding: 2px 3px;
-    background-color: white;
-    border: 2px solid black;
-}
-
-.navbar {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    border-bottom: #3a84f1 px solid;
-}
-
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-
-/* INDEX - HEADER - BARRA DE NAVEGACIÓN */
-
-li {
-    list-style-type: none;
-    margin: 0.625em;
-    padding: 0em;
-    float: left;
-}
-
-.logoChico {
-    width: 94px;
-    height: 5.563em;
-    background-image: url(../media/img/Logo_sfondo_gr.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.redes {
-    color: black;
-    padding-top: 10px;
-}
-
-
-/* INDEX - HEADER - INDEX */
-
-/*  
-.logoGrande {
-    background-image: url(../media/img/Logo_sfondo_ch.png);
-    background-size: 80%;
-    height: 29em;
-    width: 94em;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 13em;
-    margin-right: 5em;
-    background-color: #ECF4FE;
-    outline-style: auto;
-    border: solid 3px #1E3773;
-    box-shadow: 69px 73px 39px #000;
-}
-*/
-
-.logo_titulo {
-    display: flex;
-    align-items: center;
-    margin: 15em 25em 8em 25em;
-    background-color: #ECF4FE;
-    background-image: url(../media/img/Logo_sfondo_ch.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    outline-style: auto;
-    border: solid 3px #1E3773;
-    box-shadow: 69px 73px 39px #000;
-}
-
-.descripcion_foto {
-    display: flex;
-    text-align: center;
-    font-size: 1.875em;
-    align-items: center;
-    margin-right: 150px;
-}
-
-.todos_icrc {
-    background-image: url(../media/img/icrc-todos-708x536.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 22px;
-}
-
-.grilla-principal {
-    display: grid;
-    grid-template-areas:
-        "titulo titulo titulo"
-        "losMejores losMejores descripcion"
-        "nosotros-p nosotros-p nosotros-p"
-        "nosotros-p nosotros-p nosotros-p";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.8fr 1fr;
-}
-
-.grilla-principal-titulo {
-    grid-area: titulo;
-}
-
-.grilla-principal-descripcion {
-    grid-area: descripcion;
-}
-
-.grilla-principal-nosotros {
-    grid-area: nosotros-p;
-}
-
-.grilla-foto-todos {
-    grid-area: losMejores;
-}
-
-/* .icono { 
-    min-height: 70px;
-    min-width: 70px;
-    font-size: 40px;
-}*/
-
-.icono {
-    min-height: 70px;
-    min-width: 70px;
-    font-size: 40px;
-    border: solid;
-    border-color: black;
-    background-color: #1E3773;
-    border-radius: 15px;
+ @media only screen and (min-width: 991px) {
+    .logo_titulo {
+        display: flex;
+        align-items: center;
+        margin:14em 4em 12em 4em;
+        background-color: #ECF4FE;
+        background-image: url(../media/img/Logo_sfondo_ch.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        outline-style: auto;
+        border: solid 3px #1E3773;
+        box-shadow: 69px 73px 39px #000;
+    }
 } 
 
-.grilla-secundaria {
-    display: grid;
-    grid-template-areas: "nosotros-s publicaciones eventos" "becas participa sumate";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3.5fr 3.5fr;
-}
-
-.grilla-secundaria-nosotros {
-    grid-area: nosotros-s;
-    flex-flow: row nowrap;
-    padding: 40px;
-}
-
-.grilla-secundaria-publicaciones {
-    grid-area: publicaciones;
-    flex-flow: row nowrap;
-    padding: 40px;
-  }
-
-.grilla-secundaria-eventos {
-    grid-area: eventos;
-    flex-flow: row nowrap;
-    padding: 40px;
- }
-
-.grilla-secundaria-becas {
-    grid-area: becas;
-    flex-flow: row nowrap;
-    padding: 40px;
-}
-
-.grilla-secundaria-participa {
-    grid-area: participa;
-    flex-flow: row nowrap;
-    padding: 40px;
-}
-
-.grilla-secundaria-sumate {
-    grid-area: sumate;
-    flex-flow: row nowrap;
-    padding: 40px;
-}
-
-
-/* SOBRE NOSOTROS */
-
-.nosotros-foto-alejandra {
-    background-image: url("../media/img/foto-ale-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-consuelo {
-    background-image: url("../media/img/foto-consue-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-mariel {
-    background-image: url("../media/img/foto-mari-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-martina {
-    background-image: url("../media/img/foto-martu-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-pablo {
-    background-image: url("../media/img/foto-pabli-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-julietal {
-    background-image: url("../media/img/foto-julil-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-paulina {
-    background-image: url("../media/img/foto-pauli-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-julietan {
-    background-image: url("../media/img/foto-julin-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-agustin {
-    background-image: url("../media/img/foto-agus-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-laila {
-    background-image: url("../media/img/foto-lai-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-eduardo {
-    background-image: url("../media/img/foto-eduardo-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-teresa {
-    background-image: url("../media/img/foto-tere-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-carlosfelipe {
-    background-image: url("../media/img/foto-carlosfelipe-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-foto-carla {
-    background-image: url("../media/img/foto-carla-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-.nosotros-descripcion {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-/* .nosotros-fila-descripcion {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: self-start;
+/* @media only screen and (min-width: 901px) and (max-width: 991px) {
+    .logo_titulo {
+        height:16em;
+        margin: 10em 3em 5em 3em;
+        background-color: #ECF4FE;
+        background-image: url(../media/img/Logo_sfondo_ch.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        outline-style: auto;
+        border: solid 3px #1E3773;
+        box-shadow: 23px 29px 16px #000;
+        }
+        .grilla-principal {
+            display: grid;
+            grid-template-areas: 
+            "titulo  titulo" 
+            "descripcion descripcion" 
+            "losMejores  losMejores"
+            "nosotros-p  nosotros-p"
+            "nosotros-p nosotros-p";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        }
+        .descripcion_foto {
+            display: flex;
+            text-align: center;            
+            border-bottom: inset;
+            border-top: inset;
+            width: 100%;          
+        }
+        .todos_icrc {
+            background-image: url(../media/img/icrc-todos-708x536.png);
+            background-repeat: no-repeat;
+            height: 34rem;           
+            background-position: center;
+            margin: 80px 0px 30px 0px;
+        } 
 } */
 
-.nosotros-grilla-directores {
-    display: grid;
-    grid-template-areas: "mariel eduardo";
-    grid-template-columns: 1fr 1fr;
-}
+@media only screen and (min-width: 801px) and (max-width: 991px) {
 
-.director1 {
-    grid-area: mariel;
-}
+    .logo_titulo {
+        height:16em;
+        margin: 11em 3em 5em 3em;
+        background-color: #ECF4FE;
+        background-image: url(../media/img/Logo_sfondo_ch.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        outline-style: auto;
+        border: solid 3px #1E3773;
+        box-shadow: 23px 29px 16px #000;
+        }
+        .grilla-principal {
+            display: grid;
+            grid-template-areas: 
+            "titulo  titulo" 
+            "descripcion descripcion" 
+            "losMejores  losMejores"
+            "nosotros-p  nosotros-p"
+            "nosotros-p nosotros-p";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        }
+        .descripcion_foto {
+            display: flex;
+            text-align: center;            
+            border-bottom: inset;
+            border-top: inset;
+            width: 100%;            
+        }
+        .todos_icrc {
+            background-image: url(../media/img/icrc-todos-708x536.png);
+            background-repeat: no-repeat;
+            height: 34rem;           
+            background-position: center;
+            margin: 80px 0px 30px 0px;
+        }        
+} 
 
-.director2 {
-    grid-area: eduardo;
-}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
 
-.nosotros-grilla-colaboradores {
-    display: grid;
-    grid-template-areas: "alejandra paulina" "teresa pablo" "martina julietan" "agustin laila" "julietal consuelo";
-    grid-template-columns: 1fr 1fr;
-}
+    .logo_titulo {
+        height:13em;
+        margin: 10em 3em 5em 3em;
+        background-color: #ECF4FE;
+        background-image: url(../media/img/Logo_sfondo_ch.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        outline-style: auto;
+        border: solid 3px #1E3773;
+        box-shadow: 23px 29px 16px #000;
+        }
 
-.colaborador1 {
-    grid-area: alejandra
-}
+        .grilla-principal {
+            display: grid;
+            grid-template-areas: 
+            "titulo  titulo" 
+            "descripcion descripcion" 
+            "losMejores  losMejores"
+            "nosotros-p  nosotros-p"
+            "nosotros-p nosotros-p";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        }
 
-.colaborador2 {
-    grid-area: paulina
-}
-
-.colaborador3 {
-    grid-area: teresa
-}
-
-.colaborador4 {
-    grid-area: pablo
-}
-
-.colaborador5 {
-    grid-area: martina
-}
-
-.colaborador6 {
-    grid-area: julietan
-}
-
-.colaborador7 {
-    grid-area: agustin
-}
-
-.colaborador8 {
-    grid-area: laila
-}
-
-.colaborador9 {
-    grid-area: julietal
-}
-
-.colaborador10 {
-    grid-area: consuelo
-}
-
-.nosotros-grilla-asociados {
-    display: grid;
-    grid-template-areas: "carlosf carla";
-    grid-template-columns: 1fr 1fr;
-}
-
-.asociado1 {
-    grid-area: carlosf
-}
-
-.asociado2 {
-    grid-area: carla
-}
+        .descripcion_foto {
+            display: flex;
+            text-align: center;
+            /* font-size: 2.3em; */
+            /* margin: 30px 0px 10px 0px; */
+            border-bottom: inset;
+            border-top: inset;
+            width: 100%;
+            /* padding: 1em; */
+        }
+        .todos_icrc {
+            background-image: url(../media/img/icrc-todos-708x536.png);
+            background-repeat: no-repeat;
+            height: 34rem;
+           
+            background-position: center;
+            margin: 80px 0px 30px 0px;
+        }
 
 
-/* BECAS */
+} 
 
-.becas-fila-descripcion {
-    display: flex;
-    border-bottom: solid grey;
-}
-
-.becas-grilla {
-    align-items: center;
-}
-
-
-/* PUBLICACIONES */
-
-.publicaciones-fila-descripcion {
-    display: grid;
-    grid-template-areas: "titulo descripcion";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    border-bottom: solid grey;
-}
-
-.publicacion1-titulo {
-    grid-area: titulo;
-}
-
-.publicacion1-abstract {
-    grid-area: descripcion;
-}
-
-/* EVENTOS CIENTIFICOS */
-
-.tituloH2-eventos {
-    font-size: 1.8em;
-    border-bottom-style: outset;
-}
-
-.caja-eventos-top {
-    margin: 30px;
-}
-
-.caja-eventos-buttom {
-    margin: 30px;
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 30px;
-}
-
-.eventos-foto-icp {
-    display: inline-flex;
-    background-image: url("../media/img/ICP.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 19em;
-    width: 39em;
-    border: solid grey;
-    margin:10px;
-    background-size: 70%;
-}
-
-.eventos-foto-cogsci {
-    display: inline-flex;
-    background-image: url("../media/img/eventos-foto-cogsci.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 19em;
-    width: 39em;
-    border: solid grey;
-    margin:10px;
-    background-size: 70%;
-}
-
-.about-eventos {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* PARTICIPA */
-
-.formulario-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
-    text-align-last: center;
-    }
-
-.boton-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
-}
-
-.importante-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
-    font-size: 1em;
-    border: solid green;
-    background-color: whitesmoke;
-    color: green;
-    padding: 15px;
-}
-
-.importante {
-    text-decoration: underline;
-}
-
-/* SUMATE */
-.formulario-sumate {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
-}
-
-.formulario-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
-}
-
-.linea-formulario {
-    padding: 40px;
-    display: grid;
-    height: 28px;
-    border-radius: 5px;
-}
-
-.boton-sumate {
-    font-size: 15px;
-    padding: 2px 3px;
-    background-color: white;
-    border: 2px solid black;
-}
-
-}
-@media only screen and (min-width: 416px) and (max-width: 990px) {
+@media only screen and (min-width: 416px) and (max-width: 600px) {
     /* INICIO */
     *{
         margin: 0;
@@ -1205,8 +763,8 @@ li {
     }*/
 
     .logo_titulo {
-        height: 19em;
-        margin: 10em 5em 6em 5em;
+        height:10em;
+        margin: 10em 3em 5em 3em;
         background-color: #ECF4FE;
         background-image: url(../media/img/Logo_sfondo_ch.png);
         background-size: 100%;
@@ -1214,7 +772,7 @@ li {
         background-position: center;
         outline-style: auto;
         border: solid 3px #1E3773;
-        box-shadow: 69px 73px 39px #000;
+        box-shadow: 23px 29px 16px #000;
         }
 
     .descripcion_foto {
@@ -1523,8 +1081,9 @@ li {
         }*/
 
     .logo_titulo {
-        height: 15em;
-        margin: 10em 5em 6em 5em;
+        height: 110px;
+        width: 74%;
+        margin: 10em 4em 5em 3em;
         background-color: #ECF4FE;
         background-image: url(../media/img/Logo_sfondo_ch.png);
         background-size: 100%;
@@ -1532,39 +1091,45 @@ li {
         background-position: center;
         outline-style: auto;
         border: solid 3px #1E3773;
-        box-shadow: 69px 73px 39px #000;
+        box-shadow: 23px 29px 16px #000;
         }
 
     .descripcion_foto {
         display: flex;
         text-align: center;
         font-size: 2.5em;
-        margin: 30px 0px 10px 0px;
+        /* margin: 30px 0px 10px 0px; */
         border-bottom: inset;
         border-top: inset;
         width: 100%;
+        /* padding: 1em; */
     }
         
     .todos_icrc {
         background-image: url(../media/img/icrc-todos-708x536.png);
         background-repeat: no-repeat;
-        margin: 25px;
-        width: 21.25em;
-        height: 17.255em;
+        margin: 17px 5px 10px 5px;
+        width: 85%;
+        height: 300px;
         background-size: 98%;
-        place-self: center;
+        /* place-self: center; */
+        display:flex;
+        justify-self:center;
     }
 
     .grilla-principal {
         display: grid;
-        grid-template-areas: "titulo  titulo" 
-        "descripcion descripcion" 
-        "losMejores  losMejores"
-        "nosotros-p  nosotros-p"
-        "nosotros-p nosotros-p"
-        "nosotros-p nosotros-p";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas: "titulo" 
+        "descripcion" 
+        "losMejores"
+        "nosotros-p"
+        "nosotros-p"
+        "nosotros-p"
+        "nosotros-p"
+        "nosotros-p"
+        "nosotros-p";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.2fr 0.4fr 0.4fr 0.4fr;
     }
 
     .contenedorH1{
