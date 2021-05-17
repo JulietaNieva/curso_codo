@@ -77,10 +77,14 @@ main {
 .navbar {
     padding-top: 0rem;
     padding-bottom: 0rem;
-    border-bottom: #3a84f1 px solid;
+    border-bottom: #3a84f1 1px solid;
     font-size: medium;
+
 }
 
+.dropdown-item {
+    text-align: center;
+}
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -551,26 +555,24 @@ li {
 
 /* SUMATE */
 .formulario-sumate {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
+    margin-top: 60px;    
     margin-bottom: 60px;
-}
+    display:flex;
+    flex-flow: nowrap column;
+    align-items: center;
 
-.formulario-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
 }
-
 .linea-formulario {
-    padding: 40px;
-    display: grid;
+    padding: 40px;   
     height: 28px;
     border-radius: 5px;
 }
 
+.adjunto{
+    text-align:center;
+    display:flex;
+    flex-flow:column nowrap;
+}
 .boton-sumate {
     font-size: 15px;
     padding: 2px 3px;
@@ -578,6 +580,10 @@ li {
     border: 2px solid black;
 }
 
+.archivoCv {
+    width: 10em;
+    margin: 2em;
+}
 
  @media only screen and (min-width: 992px) {
     .logo_titulo {
@@ -631,6 +637,16 @@ li {
         margin-bottom: 3em;
         height: 36em;
     }
+    .importante-participa {
+        margin:5em 12em;           
+        padding: 1em;
+        
+    }
+    .formulario-participa {
+        margin-right: 194px;
+        margin-left: 194px;
+    }
+    
 } 
 
 @media only screen and (min-width: 801px) and (max-width: 991px) {
@@ -679,6 +695,17 @@ li {
             margin-top: 3px; 
             background-size: 90%;
             margin-top: 5px;         
+        }
+        .formulario-participa {
+            margin-top: 0px;
+            margin-right:30px;
+            margin-left:30px;
+            margin-bottom: 0px;
+            
+        }
+        .importante-participa {
+            margin:16px;           
+            padding: 15px;
         }
 } 
 
@@ -778,6 +805,16 @@ li {
         .titulo-grilla {
             font-size:1.7em;
         }
+        .formulario-participa {
+            margin-top: 0px;
+            margin-right: 20px;
+            margin-left:20px;
+            margin-bottom: 0px;
+        }
+        .importante-participa {
+            margin:16px;           
+            padding: 15px;
+        } 
     
 } 
 
@@ -915,7 +952,9 @@ li {
         border-color: black;
         background-color: #1E3773;
         border-radius: 15px;
-    } 
+    }
+    
+    
 
     /* NOSOTROS */
     
@@ -1083,15 +1122,14 @@ li {
         color: green;
         padding: 15px;
     } 
+    .boton-participa {
+        margin:3em;
+    }
 }
 
 @media only screen and (max-width:415px) {
     /* INICIO */
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
+  
     .logoChico {
         width: 72px;
         height: 64px;       
@@ -1191,6 +1229,9 @@ li {
         border-radius: 15px;
     }
 
+    .titulo-principal {
+        margin-top: 68px;
+    } 
     /* NOSOTROS */
     
     .texto-mediano {
@@ -1341,20 +1382,20 @@ li {
 
     .formulario-participa {
         margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 10px;
+        margin-left:10px;
         margin-bottom: 0px;
     }
 
     .importante-participa {
-        margin-top: 0;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
+        margin:10px;
         font-size: 1em;
         border: solid green;
         background-color: whitesmoke;
         color: green;
         padding: 15px;
     } 
+    .boton-participa {
+        margin:2em;
+    }
 }
