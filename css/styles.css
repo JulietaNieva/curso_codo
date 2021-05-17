@@ -4,6 +4,7 @@
     /*border: red 1px dotted;*/
 }
 
+/* estilos generales*/
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -16,6 +17,11 @@ main {
     padding-bottom: 10px;
 }
 
+a{
+    text-decoration:none;
+}
+
+/*estilos de generales para fuentes*/
 .tituloH2 {
     font-size: 1.5em;
     padding:10px;
@@ -45,6 +51,7 @@ main {
     margin: 14px;
 }
 
+/* estilos de margenes y alineaciones*/
 .margen {
     margin: 10px;
 }
@@ -67,19 +74,19 @@ main {
 }
 
 .boton{
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 4px;
     padding: 2px 3px;
     background-color: white;
     border: 2px solid black;
 }
 
+/* estilo modificado de bootstrap*/
 .navbar {
     padding-top: 0rem;
     padding-bottom: 0rem;
     border-bottom: #3a84f1 1px solid;
     font-size: medium;
-
 }
 
 .dropdown-item {
@@ -89,15 +96,7 @@ main {
     justify-content: flex-end;
 }
 
-
 /* INDEX - HEADER - BARRA DE NAVEGACIÓN */
-
-li {
-    list-style-type: none;
-    margin: 0.625em;
-    padding: 0em;
-    float: left;
-}
 
 .logoChico {
     width: 94px;
@@ -112,25 +111,20 @@ li {
     padding-top: 10px;
 }
 
+.iconoFooter{
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    margin:5px;    
+}
+
+.iconoFooter:hover{
+    color:lightblue;
+    font-size:2.2em;    
+}
+
 
 /* INDEX - HEADER - INDEX */
-
-/*  
-.logoGrande {
-    background-image: url(../media/img/Logo_sfondo_ch.png);
-    background-size: 80%;
-    height: 29em;
-    width: 94em;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 13em;
-    margin-right: 5em;
-    background-color: #ECF4FE;
-    outline-style: auto;
-    border: solid 3px #1E3773;
-    box-shadow: 69px 73px 39px #000;
-}
-*/
 
 .logo_titulo {
     display: flex;
@@ -187,13 +181,6 @@ li {
 .grilla-foto-todos {
     grid-area: losMejores;
 }
-
-/* .icono { 
-    min-height: 70px;
-    min-width: 70px;
-    font-size: 40px;
-}*/
-
 .icono {
     min-height: 70px;
     min-width: 70px;
@@ -240,119 +227,69 @@ li {
     grid-area: sumate;   
 }
 
-
 /* SOBRE NOSOTROS */
+
+.estiloNosotros{
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    min-width: 250px;    
+}
 
 .nosotros-foto-alejandra {
     background-image: url("../media/img/foto-ale-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
 }
 
 .nosotros-foto-consuelo {
-    background-image: url("../media/img/foto-consue-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-consue-250x246.7.png");   
 }
 
 .nosotros-foto-mariel {
-    background-image: url("../media/img/foto-mari-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-mari-250x246.7.png");  
 }
 
 .nosotros-foto-martina {
-    background-image: url("../media/img/foto-martu-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-martu-250x246.7.png");   
 }
 
 .nosotros-foto-pablo {
-    background-image: url("../media/img/foto-pabli-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-pabli-250x246.7.png");    
 }
 
 .nosotros-foto-julietal {
-    background-image: url("../media/img/foto-julil-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-julil-250x246.7.png");  
 }
 
 .nosotros-foto-paulina {
-    background-image: url("../media/img/foto-pauli-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-pauli-250x246.7.png");   
 }
 
 .nosotros-foto-julietan {
-    background-image: url("../media/img/foto-julin-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-julin-250x246.7.png");   
 }
 
 .nosotros-foto-agustin {
-    background-image: url("../media/img/foto-agus-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-agus-250x246.7.png");   
 }
 
 .nosotros-foto-laila {
-    background-image: url("../media/img/foto-lai-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-lai-250x246.7.png");  
 }
 
 .nosotros-foto-eduardo {
-    background-image: url("../media/img/foto-eduardo-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-eduardo-250x246.7.png");   
 }
 
 .nosotros-foto-teresa {
-    background-image: url("../media/img/foto-tere-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-tere-250x246.7.png");   
 }
 
 .nosotros-foto-carlosfelipe {
-    background-image: url("../media/img/foto-carlosfelipe-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-carlosfelipe-250x246.7.png");    
 }
 
 .nosotros-foto-carla {
-    background-image: url("../media/img/foto-carla-250x246.7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
-    min-width: 250px;
+    background-image: url("../media/img/foto-carla-250x246.7.png");    
 }
 
 .nosotros-descripcion {
@@ -360,13 +297,6 @@ li {
     flex-flow: column nowrap;
     align-items: center;
 }
-
-/* .nosotros-fila-descripcion {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: self-start;
-} */
-
 .nosotros-grilla-directores {
     display: grid;
     grid-template-areas: "mariel eduardo";
@@ -388,43 +318,43 @@ li {
 }
 
 .colaborador1 {
-    grid-area: alejandra
+    grid-area: alejandra;
 }
 
 .colaborador2 {
-    grid-area: paulina
+    grid-area: paulina;
 }
 
 .colaborador3 {
-    grid-area: teresa
+    grid-area: teresa;
 }
 
 .colaborador4 {
-    grid-area: pablo
+    grid-area: pablo;
 }
 
 .colaborador5 {
-    grid-area: martina
+    grid-area: martina;
 }
 
 .colaborador6 {
-    grid-area: julietan
+    grid-area: julietan;
 }
 
 .colaborador7 {
-    grid-area: agustin
+    grid-area: agustin;
 }
 
 .colaborador8 {
-    grid-area: laila
+    grid-area: laila;
 }
 
 .colaborador9 {
-    grid-area: julietal
+    grid-area: julietal;
 }
 
 .colaborador10 {
-    grid-area: consuelo
+    grid-area: consuelo;
 }
 
 .nosotros-grilla-asociados {
@@ -434,13 +364,12 @@ li {
 }
 
 .asociado1 {
-    grid-area: carlosf
+    grid-area: carlosf;
 }
 
 .asociado2 {
-    grid-area: carla
+    grid-area: carla;
 }
-
 
 /* BECAS */
 
@@ -452,8 +381,6 @@ li {
 .becas-grilla {
     align-items: center;
 }
-
-
 /* PUBLICACIONES */
 
 .publicaciones-fila-descripcion {
@@ -516,32 +443,24 @@ li {
 }
 
 .about-eventos {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:20px 0px;
 }
 
 /* PARTICIPA */
 
-.formulario-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
-    text-align-last: center;
-    }
-
 .boton-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
-    margin-bottom: 60px;
+    margin:3em;
 }
 
-.importante-participa {
-    margin-top: 60px;
-    margin-right: 250px;
-    margin-left: 250px;
+.estiloParticipa{
+    margin-top: 60px;    
     margin-bottom: 60px;
+}
+.formulario-participa {   
+    text-align-last: center;
+}
+
+.importante-participa {    
     font-size: 1em;
     border: solid green;
     background-color: whitesmoke;
@@ -826,10 +745,6 @@ li {
         background-size:95%;
     }
 
-    body {
-        font-family: 'Montserrat', sans-serif;
-    }
-
     .tituloH1 {
         color: #B8E0ED;
         font-size: 27px;
@@ -937,11 +852,7 @@ li {
     }
 
     .boton {
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 2px 3px;
-        background-color: white;
-        border: 2px solid black;
+        font-size: 19px;       
     }
 
     .icono {
@@ -959,18 +870,9 @@ li {
     /* NOSOTROS */
     
     .texto-mediano {
-        font-size: 20px;
-        margin: 10px;
+        font-size: 20px;        
     }
 
-    .alineacion-j {
-        text-align: left;
-    }
-
-    .subtitulo {
-        color: whitesmoke;
-        border-bottom: solid grey;
-    }
 
     .nosotros-grilla-directores {
         display: block;
@@ -997,66 +899,9 @@ li {
 
     .margen {
         margin: 12px;
-        font-size: 17px;
-        text-align: center;
+        font-size: 17px;     
     }
     
-    .nosotros-foto-alejandra {
-        background-image: url("../media/img/foto-ale-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-consuelo {
-        background-image: url("../media/img/foto-consue-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-mariel {
-        background-image: url("../media/img/foto-mari-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-martina {
-        background-image: url("../media/img/foto-martu-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-pablo {
-        background-image: url("../media/img/foto-pabli-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-julietal {
-        background-image: url("../media/img/foto-julil-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-paulina {
-        background-image: url("../media/img/foto-pauli-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-
     .texto-chico {
         font-size: 18px;
     }
@@ -1122,9 +967,6 @@ li {
         color: green;
         padding: 15px;
     } 
-    .boton-participa {
-        margin:3em;
-    }
 }
 
 @media only screen and (max-width:415px) {
@@ -1136,11 +978,6 @@ li {
         background-size: 90%;
         margin-top:3px;
     }
-
-    body {
-        font-family: 'Montserrat', sans-serif;
-    }
-
     .tituloH2 {
         font-size: 18px;
     }
@@ -1212,11 +1049,7 @@ li {
     }
 
     .boton {
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 2px 3px;
-        background-color: white;
-        border: 2px solid black;
+        font-size: 18px;           
     }
 
     .icono {
@@ -1235,17 +1068,7 @@ li {
     /* NOSOTROS */
     
     .texto-mediano {
-        font-size: 20px;
-        margin: 10px;
-    }
-
-    .alineacion-j {
-        text-align: left;
-    }
-
-    .subtitulo {
-        color: whitesmoke;
-        border-bottom: solid grey;
+        font-size: 20px;       
     }
 
     .nosotros-grilla-directores {
@@ -1273,66 +1096,9 @@ li {
 
     .margen {
         margin: 12px;
-        font-size: 17px;
-        text-align: center;
+        font-size: 17px;        
     }
     
-    .nosotros-foto-alejandra {
-        background-image: url("../media/img/foto-ale-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-consuelo {
-        background-image: url("../media/img/foto-consue-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-mariel {
-        background-image: url("../media/img/foto-mari-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-martina {
-        background-image: url("../media/img/foto-martu-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-pablo {
-        background-image: url("../media/img/foto-pabli-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-julietal {
-        background-image: url("../media/img/foto-julil-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-    
-    .nosotros-foto-paulina {
-        background-image: url("../media/img/foto-pauli-250x246.7.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 250px;
-        min-width: 250px;
-    }
-
     .texto-chico {
         font-size: 17px;
     }
@@ -1340,9 +1106,10 @@ li {
     /* PUBLICACIONES */
 
     .publicaciones-fila-descripcion {
-        display: block;
-        grid-template-areas: "titulo descripcion";
-        grid-template-columns: 1fr 1fr;
+        
+        grid-template-areas: "titulo"
+                             "descripcion";
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr;
         border-bottom: solid grey;
     }
@@ -1394,8 +1161,9 @@ li {
         background-color: whitesmoke;
         color: green;
         padding: 15px;
-    } 
-    .boton-participa {
-        margin:2em;
+    }
+
+    .estiloParticipa{
+        margin:14px;
     }
 }
