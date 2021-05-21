@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /*border: red 1px dotted;*/
 }
 
 /* estilos generales*/
@@ -17,12 +16,21 @@ main {
     padding-bottom: 10px;
 }
 
-a{
+a {
     text-decoration:none;
+}
+
+li:hover {
+    border-bottom: 1px solid #1E3773;
 }
 
 /*estilos de generales para fuentes*/
 .tituloH2 {
+    font-size: 1.5em;
+    padding:10px;
+}
+
+.tituloH2-sub {
     font-size: 1.5em;
     padding:10px;
 }
@@ -74,14 +82,20 @@ a{
 }
 
 .boton{
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 4px;
     padding: 2px 3px;
     background-color: white;
     border: 2px solid black;
 }
 
+.boton:hover {
+    background-color: grey;
+    color: white;
+}
+
 /* estilo modificado de bootstrap*/
+
 .navbar {
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -106,9 +120,14 @@ a{
     background-size: cover;
 }
 
+.logoChico:hover {
+    transform: scale(1.1, 1.1);
+}
+
 .redes {
     color: black;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .iconoFooter{
@@ -390,6 +409,7 @@ a{
 .becas-fila-descripcion {
     display: flex;
     border-bottom: solid grey;
+    margin: 28px;
 }
 
 .becas-grilla {
@@ -402,7 +422,7 @@ a{
     border-bottom: solid grey;
 }
 
- .publicaciones-grilla {
+.publicaciones-grilla {
     display: grid;
     grid-template-areas: "publicacion1" "publicacion2" "publicacion3";
     grid-template-columns: 1fr;
@@ -430,7 +450,8 @@ a{
 }
 
 .abstract {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    margin: 10px;
 }
 
 /* EVENTOS CIENTIFICOS */
@@ -618,50 +639,50 @@ a{
         border: solid 3px #1E3773;
         box-shadow: 23px 29px 16px #000;
         }
-        .grilla-principal {
-            display: grid;
-            grid-template-areas: 
-            "titulo  titulo" 
-            "descripcion descripcion" 
-            "losMejores  losMejores"
-            "nosotros-p  nosotros-p"
-            "nosotros-p nosotros-p";
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-        }
-        .descripcion_foto {
-            display: flex;
-            text-align: center;            
-            border-bottom: inset;
-            border-top: inset;
-            width: 100%;            
-        }
-        .todos_icrc {
-            background-image: url(../media/img/icrc-todos-708x536.png);
-            background-repeat: no-repeat;
-            height: 34rem;           
-            background-position: center;
-            margin: 80px 0px 30px 0px;
-        }        
-        .logoChico {
-            width: 80px;
-            height:5.563em;
-            background-size: 95%;  
-            margin-top: 3px; 
-            background-size: 90%;
-            margin-top: 5px;         
-        }
-        .formulario-participa {
-            margin-top: 0px;
-            margin-right:30px;
-            margin-left:30px;
-            margin-bottom: 0px;
-            
-        }
-        .importante-participa {
-            margin:16px;           
-            padding: 15px;
-        }
+    .grilla-principal {
+        display: grid;
+        grid-template-areas: 
+        "titulo  titulo" 
+        "descripcion descripcion" 
+        "losMejores  losMejores"
+        "nosotros-p  nosotros-p"
+        "nosotros-p nosotros-p";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+    .descripcion_foto {
+        display: flex;
+        text-align: center;            
+        border-bottom: inset;
+        border-top: inset;
+        width: 100%;            
+    }
+    .todos_icrc {
+        background-image: url(../media/img/icrc-todos-708x536.png);
+        background-repeat: no-repeat;
+        height: 34rem;           
+        background-position: center;
+        margin: 80px 0px 30px 0px;
+    }        
+    .logoChico {
+        width: 80px;
+        height:5.563em;
+        background-size: 95%;  
+        margin-top: 3px; 
+        background-size: 90%;
+        margin-top: 5px;         
+    }
+    .formulario-participa {
+        margin-top: 0px;
+        margin-right:30px;
+        margin-left:30px;
+        margin-bottom: 0px;
+        
+    }
+    .importante-participa {
+        margin:16px;           
+        padding: 15px;
+    }
 } 
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
@@ -679,100 +700,101 @@ a{
         box-shadow: 23px 29px 16px #000;
         }
 
-        .grilla-principal {
-            display: grid;
-            grid-template-areas: "titulo  titulo" 
-            "descripcion descripcion" 
-            "losMejores  losMejores"
-            "nosotros-p  nosotros-p"
-            "nosotros-p nosotros-p"
-            "nosotros-p nosotros-p";
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 0.5fr;
-        }
+    .grilla-principal {
+        display: grid;
+        grid-template-areas: "titulo  titulo" 
+        "descripcion descripcion" 
+        "losMejores  losMejores"
+        "nosotros-p  nosotros-p"
+        "nosotros-p nosotros-p"
+        "nosotros-p nosotros-p";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
 
-        .grilla-secundaria {
-            display: grid;
-            grid-template-areas:
-                "nosotros-s "
-                "publicaciones "
-                "eventos"
-                "becas"
-                "participa"
-                "sumate";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-            text-align: center;
-        }
+    .grilla-secundaria {
+        display: grid;
+        grid-template-areas:
+            "nosotros-s "
+            "publicaciones "
+            "eventos"
+            "becas"
+            "participa"
+            "sumate";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
 
-        .descripcion_foto {
-            display: flex;
-            text-align: center;            
-            border-bottom: inset;
-            border-top: inset;
-            width: 100%;            
-        }
-        .todos_icrc {
-            background-image: url(../media/img/icrc-todos-708x536.png);
-            background-repeat: no-repeat;
-            height: 34rem;
-            background-size: 95%;
-            background-position: center;
-            margin: 80px 0px 30px 0px;
-        }
+    .descripcion_foto {
+        display: flex;
+        text-align: center;            
+        border-bottom: inset;
+        border-top: inset;
+        width: 100%;            
+    }
 
-        .logoChico {
-            width: 80px;
-            height: 5.563em;
-            background-size: 95%;  
-            margin-top: 3px;          
-        }
+    .todos_icrc {
+        background-image: url(../media/img/icrc-todos-708x536.png);
+        background-repeat: no-repeat;
+        height: 34rem;
+        background-size: 95%;
+        background-position: center;
+        margin: 80px 0px 30px 0px;
+    }
 
-        /* .tituloH2 { 
-            font-size: 1.2em;
-        } */
-        
-        
-        .seccionItem {
-            padding: 0px;
-            margin-left: 3em;
-            margin-right: 3em;
-            margin-top: 2em;
-            width:-webkit-fill-available;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            
-        }
-        .icono {
-                min-height: 40px;
-                min-width: 40px;
-                font-size: 30px;
-                border: solid;
-                border-color: black;
-                background-color: #1E3773;
-                border-radius: 15px;
-            
-        } 
-        .grilla-secundaria {
-            padding: 4px;
-            margin: 2px;
-            justify-items: center;
-        }
-        .titulo-grilla {
-            font-size:1.7em;
-        }
-        .formulario-participa {
-            margin-top: 0px;
-            margin-right: 20px;
-            margin-left:20px;
-            margin-bottom: 0px;
-        }
-        .importante-participa {
-            margin:16px;           
-            padding: 15px;
-        } 
+    .logoChico {
+        width: 80px;
+        height: 5.563em;
+        background-size: 95%;  
+        margin-top: 3px;          
+    }
     
+    .seccionItem {
+        padding: 0px;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 2em;
+        width:-webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .icono {
+        min-height: 40px;
+        min-width: 40px;
+        font-size: 30px;
+        border: solid;
+        border-color: black;
+        background-color: #1E3773;
+        border-radius: 15px;
+    } 
+
+    .grilla-secundaria {
+        padding: 4px;
+        margin: 2px;
+        justify-items: center;
+    }
+
+    .titulo-grilla {
+        font-size:1.7em;
+    }
+
+    .formulario-participa {
+        margin-top: 0px;
+        margin-right: 20px;
+        margin-left:20px;
+        margin-bottom: 0px;
+    }
+
+    .importante-participa {
+        margin:16px;           
+        padding: 15px;
+    } 
+
+    .publicaciones-grilla {
+        grid-template-rows: 20em 31em 20em;
+    }
 } 
 
 @media only screen and (min-width: 416px) and (max-width: 600px) {
@@ -792,6 +814,7 @@ a{
     .tituloH2 {
         font-size: 2rem;
     }
+
     .logo_titulo {
         height:10em;
         margin: 10em 3em 5em 3em;
@@ -890,7 +913,7 @@ a{
     }
 
     .boton {
-        font-size: 19px;       
+        font-size: 18px;       
     }
 
     .icono {
@@ -901,8 +924,7 @@ a{
         border-color: black;
         background-color: #1E3773;
         border-radius: 15px;
-    }
-    
+    } 
 
     /* NOSOTROS */
     
@@ -934,8 +956,7 @@ a{
     }
 
     .margen {
-        margin: 12px;
-        font-size: 17px;     
+        margin: 12px;  
     }
     
     .texto-chico {
@@ -944,23 +965,23 @@ a{
 
     /* PUBLICACIONES */
 
-        .publicaciones {
+    .publicaciones {
         flex-flow: column nowrap;
         align-items: center;
-        }
+    }
+
+    .publicacion-descripcion {
+        width: 95%;
+    }
     
-        .publicacion-descripcion {
-            width: 95%;
-        }
-        
-        .publicacion-abstract {
-            width: 95%;
-        }
-    
-        .publicaciones-grilla {
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.7fr 0.1fr 0.7fr;
-        }
+    .publicacion-abstract {
+        width: 95%;
+    }
+
+    .publicaciones-grilla {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 0.1fr 0.7fr;
+    }
     
     /* EVENTOS */
 
@@ -990,11 +1011,11 @@ a{
 
     /* BECAS */
 
-    .becas-fila-descripcion {
-        display: block;
-        border-bottom: solid grey;
+    .becas-descripcion {
+        font-size: 1.1em;
     }
 
+    /* PARTICIPA */
     .formulario-participa {
         margin-top: 0px;
         margin-right: 40px;
@@ -1013,6 +1034,14 @@ a{
         color: green;
         padding: 15px;
     } 
+
+    /* SUMATE */
+    .archivoCv {
+        width: 20em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
 }
 
 @media only screen and (max-width:415px) {
@@ -1024,9 +1053,16 @@ a{
         background-size: 90%;
         margin-top:3px;
     }
+
     .tituloH2 {
-        font-size: 24px;
+        font-size: 33px;
     }
+
+    .tituloH2-sub {
+        font-size: 1.4em;
+        padding:10px;
+    }
+
     .logo_titulo {
         height: 110px;
         width: 74%;
@@ -1039,7 +1075,7 @@ a{
         outline-style: auto;
         border: solid 3px #1E3773;
         box-shadow: 23px 29px 16px #000;
-        }
+    }
 
     .descripcion_foto {
         display: flex;
@@ -1142,8 +1178,7 @@ a{
     }
 
     .margen {
-        margin: 12px;
-        font-size: 18px;        
+        margin: 12px;   
     }
     
     .texto-chico {
@@ -1153,8 +1188,8 @@ a{
     /* PUBLICACIONES */
 
     .publicaciones {
-    flex-flow: column nowrap;
-    align-items: center;
+        flex-flow: column nowrap;
+        align-items: center;
     }
 
     .publicacion-descripcion {
@@ -1168,6 +1203,10 @@ a{
     .publicaciones-grilla {
         grid-template-columns: 1fr;
         grid-template-rows: 0.7fr 0.1fr 0.7fr;
+    }
+
+    .abstract {
+        font-size: 1em;
     }
 
     /* EVENTOS */
@@ -1197,11 +1236,15 @@ a{
     }
 
     /* BECAS */
+    .becas-descripcion {
+            font-size: 1.1em;
+        }
 
     .becas-fila-descripcion {
-        display: block;
-        border-bottom: solid grey;
+        margin: 0px;
     }
+
+    /* PARTICIPA  */
 
     .formulario-participa {
         margin-top: 0px;
@@ -1221,5 +1264,12 @@ a{
 
     .estiloParticipa{
         margin:14px;
+    }
+
+    /* SUMATE */
+    .archivoCv {
+        width: 18em;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 }
