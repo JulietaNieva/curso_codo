@@ -1,0 +1,114 @@
+[33mcommit 8f268c50d1d4ee328734bc2b2b4e96b325b59987[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Wed Aug 4 00:10:46 2021 -0300
+
+    actualizacion index ingles
+
+[33mcommit 48d63aea22ffd145a4be5c4d7a52d24d995cd8ea[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Fri May 21 00:14:39 2021 -0300
+
+    se mejora código y se agrega info. hovers en menu e imagenes
+
+[33mcommit 6076bae16d2a8ff522a1b241bd15fab10a4c1118[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Tue May 18 00:44:34 2021 -0300
+
+    nuevas modificaciones en media y estilo en publicaciones
+
+[33mcommit 8941f47f575f7ad939551738ed3b242259b1e494[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Mon May 17 00:50:34 2021 -0300
+
+    cambios en css
+
+[33mcommit c423890c6c186d9135ac10a704e59196b2693a44[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sun May 16 22:24:31 2021 -0300
+
+    se modifica mapas, márgenes y navbar
+
+[33mcommit 238b877570a33c8dfe51980fdf5a5e2a9d5eb617[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sun May 16 19:51:56 2021 -0300
+
+    se establecen fix media
+
+[33mcommit 6569497b868608cb21006c196e02a40805a77635[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sun May 16 02:56:50 2021 -0300
+
+    medias modificados hasta 991px
+
+[33mcommit 6d97377bb3b65e2d3ac1434c8346fdcc23cca420[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sat May 15 02:37:59 2021 -0300
+
+    se generan nuevos medias
+
+[33mcommit a863d97547cd1f3a1ca4da26a4a4cd66bbce6f40[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Fri May 14 18:05:52 2021 -0300
+
+    se modifican estilos
+
+[33mcommit 2c312c6064004f1078d98c1d3248bd437a18d54a[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Fri May 14 00:40:02 2021 -0300
+
+    se actualiza menu e imágenes
+
+[33mcommit 65ccf70d09ae9a93a2660b1094908ef2bd99857c[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Thu May 13 00:37:17 2021 -0300
+
+    se modifica grilla secundaria y se agrega mediaq para tablet
+
+[33mcommit 57c947671f02e2e30e15b3fa8034299f00b56a50[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Wed May 12 02:19:10 2021 -0300
+
+    se actualiza menú
+
+[33mcommit 7c4e981497adaf8fc096aed1ab366b377966b4d3[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Wed May 12 00:11:16 2021 -0300
+
+    se modifica menu, y se mejora responsive
+
+[33mcommit 0a542a69425aaf6f5ff870c58c37d733c1408e96[m
+Merge: 3eefd11 b700883
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sun May 9 02:33:59 2021 -0300
+
+    Merge branch 'master' of https://github.com/JulietaNieva/curso_codo
+
+[33mcommit 3eefd11ae16414b84db38ec52226f933a19c2e8b[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sun May 9 02:32:12 2021 -0300
+
+    Agregado de fotos y actualizacion de descripciones
+
+[33mcommit b7008838bc62cf242dbf54b49f1b636377e038d1[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sat May 8 14:41:31 2021 -0300
+
+    rename index
+
+[33mcommit ee596892e45b8799745a0697d2da818a7dbc0774[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sat May 8 14:38:44 2021 -0300
+
+    se corrige error index
+
+[33mcommit e5c5b8ed0899cc4093a06ca0c6fabc5aff69313e[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sat May 8 02:44:59 2021 -0300
+
+    se modifica menu, y colores
+
+[33mcommit 3d2e80af2955d9bedc70f52c39f2ef2b83a62a9e[m
+Author: JulietaNieva <jnieva051@gmail.com>
+Date:   Sat May 8 02:02:03 2021 -0300
+
+    primera-version
