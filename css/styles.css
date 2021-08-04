@@ -94,6 +94,24 @@ li:hover {
     color: white;
 }
 
+.EN {
+    background-image: url(../media/img/en.png);
+    background-repeat: no-repeat;
+    width: 59px;
+    height: 37px;
+    background-size: 50%;
+    margin-left: 27px;
+}
+
+.ES {
+    background-image: url(../media/img/es.png);
+    background-repeat: no-repeat;
+    width: 59px;
+    height: 37px;
+    background-size: 50%;
+    margin-left: 27px; 
+}
+
 /* estilo modificado de bootstrap*/
 
 .navbar {
@@ -106,6 +124,7 @@ li:hover {
 .dropdown-item {
     text-align: center;
 }
+
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -236,13 +255,26 @@ li:hover {
     grid-template-rows: 3.5fr 3.5fr;
 }
 
+/* .grilla-secundaria {
+    display: table-column-group;
+    grid-template-areas:
+        "nosotros-s publicaciones"
+        "eventos eventos"
+        "becas participa";
+} */
+
+/* .grilla-secundaria {
+    display: grid;
+    grid-template-areas: "nosotros-s publicaciones eventos becas participa sumate";
+} */
+
 .grilla-secundaria-nosotros {
     grid-area: nosotros-s;    
 }
 
 .grilla-secundaria-publicaciones {
     grid-area: publicaciones;   
-  }
+}
 
 .grilla-secundaria-eventos {
     grid-area: eventos;    
@@ -509,10 +541,11 @@ li:hover {
     margin:3em;
 }
 
-.estiloParticipa{
-    margin-top: 60px;    
-    margin-bottom: 60px;
+.estiloParticipa {
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
+
 .formulario-participa {   
     text-align-last: center;
 }
@@ -536,8 +569,8 @@ li:hover {
     display:flex;
     flex-flow: nowrap column;
     align-items: center;
-
 }
+
 .linea-formulario {
     padding: 40px;   
     height: 28px;
@@ -549,6 +582,7 @@ li:hover {
     display:flex;
     flex-flow:column nowrap;
 }
+
 .boton-sumate {
     font-size: 15px;
     padding: 2px 3px;
@@ -561,7 +595,7 @@ li:hover {
     margin: 2em;
 }
 
- @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .logo_titulo {
         height:16em;
         width: 50em;
@@ -1237,8 +1271,8 @@ li:hover {
 
     /* BECAS */
     .becas-descripcion {
-            font-size: 1.1em;
-        }
+        font-size: 1.1em;
+    }
 
     .becas-fila-descripcion {
         margin: 0px;
